@@ -5,13 +5,15 @@
     <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="business-owner.css">
+    <link rel="stylesheet" href="css/business-owner.css">
 </head>
 
 <body>
+
     <h2>Business owner</h2>
-   <p> fill in the form bellow and submit to be added as a service provider</p>
-    <form class="form-inline" action="/action_page.php">
+    <h1><p> fill in the form bellow and submit to be added as a service provider</p></h1>
+    
+    <form class="form-inline" action="/action_page.js">
         <label for="name&surname">Name & Surname:</label>
         <input type="name" id="name" placeholder="Enter name & Surname" name="name">
         <label for="email">Email:</label>
@@ -19,16 +21,27 @@
         <label for="businessName"> Business name:</label>
         <input type="BusinessName" id="" placeholder="Enter business name" name="business name">
         <label for="businessDescription"> Business description:</label>
-        <input type="BusinessName" id="" placeholder="Describe your business" name="description">
-        <label for="pwd">Password:</label>
-  <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Describe your business " name="description"></textarea>
+        <label for="filename">Filename</label>
+        <input type="file" id="myFile" name="filename">
+    
+    
         <label>
             <input type="checkbox" name="remember"> Remember me
         </label>
-        <button type="submit">Submit</button>
-    </form>
+        
+        <button onclick="myFunction()" type="submit">Submit</button>
 
-</body>
+    </form>
+    
+    <script>
+        function myFunction() {
+          alert("I am an alert box!");
+        }
+    </script>
+
+
+
 </body>
 
 </html>

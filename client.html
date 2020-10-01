@@ -1,13 +1,103 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="client.css">
-    </head>
-        <body>
 
-        </body>
-    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/client.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <h1>Client</h1>
+    <p>Choose from our incredible service providers</p>
+
+    <div class="Plumbing">
+        <button onclick="myFunction()" class="dropbtn">Plumbers</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunctionA()">
+            <a href="#Azola Nxele">Azola Nxele </a>
+            <a href="#Jacob lubisi">Jacod lubisi</a>
+            <a href="#Isriel Sontonga">Isriel Sontonga</a>
+            <a href="#Menzi Johnson">Menzi Johnson</a>
+            <a href="#Xolani Thimla">Xolani Thimla</a>
+            <a href="#Goodwill Qhina">Goodwill Qhina</a>
+            <a href="#Avela Bhinqa">Avela Bhinqa</a>
+        </div>
+
+    </div>
+    <br></br>
+    <div class="Hair dressers">
+        <button onclick="myFunction()" class="dropbtn">Hair dressers</button>
+        <div id="Hair" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunctionB()">
+            <a href="#Amanda Zoya">Amanda Zoya</a>
+            <a href="#Bongiwe Zweni">Bongiwe Zweni</a>
+            <a href="#Bulelwa Mkhize">Bulelwa Mkhize</a>
+            <a href="#Candice Mayers">Candice Mayers</a>
+            <a href="#Julia Bidoli">Julia Bidoli</a>
+            <a href="#Hazel Peter">Hazel Peter</a>
+            <a href="#Zenande Moya">Zenande Moya</a>
+        </div>
+    </div>
+    <br></br>
+    <div class="furniture movers">
+        <button onclick="myFunction()" class="dropbtn">Furniture movers</button>
+        <div id="movers" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunctionB()">
+            <a href="#Senzo Sithole">Senzo Sithole</a>
+            <a href="#Mzwamadoda Sikhweyiya">Mzwamadoda Sikhweyiya</a>
+            <a href="#Mandla Sithole">Mandla Sithole</a>
+
+
+        </div>
+    </div>
+
+     <!-- <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("Hair").classList.toggle("show");
+            document.getElementById("movers").classList.toggle("show");
+        }
+
+        function filterFunctionA() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+        function filterFunctionB() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("Hair");
+            b = div.getElementsByTagName("b");
+            for (i = 0; i < b.length; i++) {
+                txtValue = b[i].textContent || b[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    b[i].style.display = "";
+                } else {
+                    b[i].style.display = "none";
+                }
+            }
+
+        }
+    </script>  -->
+
+</body>
+
 </html>
